@@ -12,7 +12,7 @@ proxies = {'http': '127.0.0.1:1080', 'https': '127.0.0.1:1080'}
 subscribeFile = 'output\\list.txt'
 
 git = 'git'
-git_commit_auto = True;
+git_commit_auto = True
 
 
 def lncn_encrypt(data, key):
