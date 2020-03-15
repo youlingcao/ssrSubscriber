@@ -36,6 +36,7 @@ def update_git(date, list_ssrUrl):
     if git_commit_auto:
         subprocess.call([git, 'add', '*'])
         subprocess.call([git, 'commit', '-m', date])
+        subprocess.call([git, 'push'])
     return
 
 
