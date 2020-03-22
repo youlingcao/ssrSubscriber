@@ -5,7 +5,7 @@ from Crypto.Cipher import AES
 import base64
 import subprocess
 
-api_theSSR = 'https://lncn.org/api/theSSR'
+api_theSSR = 'https://lncn.org/api/SSR'
 api_nextUpdateTime = 'https://lncn.org/api/notices'
 
 proxies = {'http': '127.0.0.1:1080', 'https': '127.0.0.1:1080'}
@@ -54,7 +54,7 @@ def gain_data():
             ssrs = json_data['ssrs']
             if date and ssrs:
                 # encrypt data
-                ssrs = lncn_encrypt(ssrs, '3312654323299321')
+                ssrs = lncn_encrypt(ssrs, '3912658659499321')
                 assert ssrs
 
                 json_ssrs = json.loads(ssrs)
